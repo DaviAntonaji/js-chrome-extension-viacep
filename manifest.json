@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Consultar CEPs",
+    "version": "1.0",
+    "description": "Uma extensão para consultar CEPs.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "host_permissions": ["https://viacep.com.br/*"]
+    
+  }
+  
