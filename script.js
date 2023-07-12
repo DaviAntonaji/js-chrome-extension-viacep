@@ -1,6 +1,6 @@
 function formatCEP(cep) {
-    cep = cep.replace("-", "")
-    cep = cep.replace(".", "")
+    cep = cep.replace("-", "");
+    cep = cep.replace(".", "");
     return cep.replace(/^(\d{5})(\d{3})$/, "$1-$2");
   }
   
@@ -24,8 +24,8 @@ function formatCEP(cep) {
   
   document.getElementById("consultar").addEventListener("click", function() {
     var cep = document.getElementById("cep").value;
+    cep = formatCEP(cep);
     if (cep.length === 8) {
-      cep = formatCEP(cep);
       consultarCEP(cep);
     } else {
       alert("Por favor, digite um CEP válido.");
